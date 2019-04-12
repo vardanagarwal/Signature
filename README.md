@@ -1,5 +1,5 @@
 # Signature
-Project on Signature forgery
+Project on Signature forgery.
 Project will be two stages:
 Stage 1:
 Use only positives and for a given signature we need to find out whose signature is it.
