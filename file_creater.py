@@ -28,7 +28,7 @@ for i in range(0,100):
     files = os.listdir(name)
     for file in files:
         if re.search("png",file) != None:
-            if re.search("f",file) != None:
+            if re.search("v",file) != None:
                 src = name + "\\" + file
                 dst = name + "\\positives\\" + file
                 os.rename(src, dst)
