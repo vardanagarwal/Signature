@@ -71,14 +71,14 @@ for i in range(0, 100):
     n_folders = os.listdir(n_src)
     for image in p_folders:
         p_src1 = p_src + "\\" + image
-        if re.search('4',image) or re.search('9', image) != None:
+        if re.search('4', re.split('v',image)[1]) or re.search('9', re.split('v',image)[1]) != None:
             p_dst1 = p_dst + "\\" + image
             os.rename(p_src1, p_dst1)
     for image in n_folders:
         n_src1 = n_src + "\\" + image
-        if re.search('4',image) or re.search('9', image) != None:
+        if re.search('4', re.split('f',image)[1]) or re.search('9', re.split('f',image)[1]) != None:
             n_dst1 = n_dst + "\\" + image
-            os.rename(n_src1, n_dst1)    
+            os.rename(n_src1, n_dst1)
             
     
     
